@@ -39,7 +39,7 @@ public class Jogador {
 
     @Override
     public String toString() {
-        return "Jogador com nome= "+nome+",camisa= "+camisa+", gols= "+gols+"]";
+        return "Jogador [nome="+nome+", camisa="+camisa+", gols="+gols+"]";
     }
     
 }
