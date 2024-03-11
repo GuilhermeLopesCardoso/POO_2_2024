@@ -26,7 +26,7 @@ public class ContaBancaria {
         this.saldo +=valor;
         return true;
     }
-    public boolean Tranferencia(ContaBancaria destino, double valor ) {
+    public boolean Transferencia(ContaBancaria destino, double valor ) {
         if(Saque(valor)) {
             if(destino.Deposito(valor)) {
                 return true;
