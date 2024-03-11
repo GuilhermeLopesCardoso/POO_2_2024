@@ -32,19 +32,19 @@ class ContaBancariaEspecialTest {
     }
     @Test
     void testTranferencia() {
-        c1.Tranferencia(c2 , 100);
+        c1.Transferencia(c2 , 100);
         assertEquals( "ContaBancaria: numero Conta=1, saldo=R$800.0]",c1.toString() );
         assertEquals( "ContaBancaria: numero Conta=2, saldo=R$1100.0]",c2.toString() );
     }
     @Test
     void testTranferenciaLimite() {
-        c1.Tranferencia(c2 , 950);
+        c1.Transferencia(c2 , 950);
         assertEquals( "ContaBancaria: numero Conta=1, saldo=R$-50.0]",c1.toString() );
         assertEquals( "ContaBancaria: numero Conta=2, saldo=R$1950.0]",c2.toString() );
     }
     @Test
     void testTranferenciaErrado() {
-        c1.Tranferencia(c2 , 10000);
+        c1.Transferencia(c2 , 10000);
         assertEquals( "ContaBancaria: numero Conta=1, saldo=R$900.0]",c1.toString() );
         assertEquals( "ContaBancaria: numero Conta=2, saldo=R$1000.0]",c2.toString() );
     }

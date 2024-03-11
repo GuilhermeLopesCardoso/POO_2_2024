@@ -26,7 +26,7 @@ public class ContaBancariaEspecial {
         }return false;
     }
     @Override
-    public boolean Tranferencia(ContaBancaria destino, double valor ) {
+    public boolean Transferencia(ContaBancaria destino, double valor ) {
         if(Saque(valor)) {
             if(destino.Deposito(valor)) {
                 return true;
