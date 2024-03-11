@@ -2,17 +2,16 @@ package exercicio_bancario.exercicio_bancario_teste;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import exercicio_bancario.ContaBancaria;
+import exercicio_bancario.ContaBancariaCorrente;
 
 
 
-class ContaBancariaTest {
+class ContaBancariaCorrenteTest {
     ContaBancaria c1;
     ContaBancaria c2;
     
@@ -20,8 +19,8 @@ class ContaBancariaTest {
     @BeforeEach
     public void inicialização() {
 
-         c1 = new ContaBancaria(01 , 900);
-         c2 = new ContaBancaria(02 , 1000);
+         c1 = new ContaBancariaCorrente(01 , 900);
+         c2 = new ContaBancariaCorrente(02 , 1000);
 
     }
     @Test

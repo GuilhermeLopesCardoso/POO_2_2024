@@ -1,60 +1,59 @@
 package exercicio_bancario;
 
 public class ContaBancaria {
-    int numero;	
-	Double saldo;
+    
+    protected int numeroConta;
+    protected double saldo;
 
-	public ContaBancaria() {
-		this.numero = 9999;
-		this.saldo = -999.99;
-	}
 
-	public ContaBancaria(int numero, Double saldo) {
-		super();
-		this.numero = numero;
-		this.saldo = saldo;
-	}
+    public ContaBancaria(int numeroConta, double saldo) {
 
-	public String toString() {
-		return "Conta: "+this.numero+"- Saldo: "+this.saldo;
-	}
-	
-	public String deposito(Double valor) {
-		this.saldo+= valor;
-		return "Depósito Efetuado com sucesso";
-	}
+        this.numeroConta = numeroConta;
+        this.saldo = saldo;
+    }
 
-	public String saque(Double valor) {
-		if (this.saldo<= valor) {
-			this.saldo= saldo-valor;
-			return "Saque efetuado com sucesso";
-		}
-		return "Saque não efetuado, Saldo Insuficiente";
-	}
-	
-	public String transferencia(ContaBancaria conta,Double valor) {
-		if (this.saldo<= valor) {
-			this.saldo= saldo-valor;
-			conta.deposito(valor);
-			return "Transferencia efetuada com sucesso";
-		}
-		return "Transferencia não efetuada, Saldo Insuficiente";
-	}
-	
-	public int getNumero() {
-		return numero;
-	}
+    public ContaBancaria() {
+        this.numeroConta = 0;
+        this.saldo= 0.0;
+    }
+    public boolean Saque(double valor) {
+        if(saldo >= valor) {
+            this.saldo -=  valor;
+            return true;
+        }return false;
+    }
+    public boolean Deposito(double valor) {
+        this.saldo +=valor;
+        return true;
+    }
+    public boolean Tranferencia(ContaBancaria destino, double valor ) {
+        if(Saque(valor)) {
+            if(destino.Deposito(valor)) {
+                return true;
+            }else {
+                Deposito(valor);
+                return false;
+            }
+        }return false;
+    }
 
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
+    @Override
+    public String toString() {
+        return "ContaBancaria: numero Conta=" + numeroConta + ", saldo=R$" + saldo + "]";
+    }
 
-	public Double getSaldo() {
-		return saldo;
-	}
 
-	public void setSaldo(Double saldo) {
-		this.saldo = saldo;
-	}
+    public int getNumeroConta() {
+        return numeroConta;
+    }
+    public void setNumeroConta(int numeroConta) {
+        this.numeroConta = numeroConta;
+    }
+    public double getSaldo() {
+        return saldo;
+    }
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
 }
-
