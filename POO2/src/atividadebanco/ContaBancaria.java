@@ -1,9 +1,11 @@
-package exercicio_bancario;
+package atividadebanco;
 
 public class ContaBancaria {
-    
     protected int numeroConta;
     protected double saldo;
+
+
+
 
 
     public ContaBancaria(int numeroConta, double saldo) {
@@ -11,6 +13,7 @@ public class ContaBancaria {
         this.numeroConta = numeroConta;
         this.saldo = saldo;
     }
+
 
     public ContaBancaria() {
         this.numeroConta = 0;
@@ -26,7 +29,7 @@ public class ContaBancaria {
         this.saldo +=valor;
         return true;
     }
-    public boolean Transferencia(ContaBancaria destino, double valor ) {
+    public boolean Tranferencia(ContaBancaria destino, double valor ) {
         if(Saque(valor)) {
             if(destino.Deposito(valor)) {
                 return true;
@@ -36,6 +39,8 @@ public class ContaBancaria {
             }
         }return false;
     }
+
+
 
     @Override
     public String toString() {

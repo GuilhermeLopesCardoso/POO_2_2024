@@ -1,4 +1,4 @@
-package exercicio_bancario.exercicio_bancario_teste;
+package atividadebanco.exercicio_bancario_teste;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import exercicio_bancario.ContaBancaria;
-import exercicio_bancario.ContaBancariaCorrente;
-import exercicio_bancario.ContaBancariaEspecial;
-import exercicio_bancario.ContaBancariaPoupanca;
-import exercicio_bancario.Banco;
+import atividadebanco.Banco;
+import atividadebanco.ContaBancaria;
+import atividadebanco.ContaBancariaCorrente;
+import atividadebanco.ContaBancariaEspecial;
+import atividadebanco.ContaBancariaPoupanca;
 class BancoTest {
 
 	Banco b1;

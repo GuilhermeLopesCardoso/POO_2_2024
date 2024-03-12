@@ -1,12 +1,15 @@
-package exercicio_bancario;
+package atividadebanco;
 
-public class ContaBancariaCorrente {
-    public ContaBancariaCorrente() {
+public class ContaBancariaCorrente extends ContaBancaria {
+
+	public ContaBancariaCorrente() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public ContaBancariaCorrente(int numeroConta, double saldo) {
 		super(numeroConta, saldo);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -22,7 +25,7 @@ public class ContaBancariaCorrente {
         return true;
     }
 	@Override
-	 public boolean Transferencia(ContaBancaria destino, double valor ) {
+	 public boolean Tranferencia(ContaBancaria destino, double valor ) {
 	        if(Saque(valor)) {
 	            if(destino.Deposito(valor)) {
 	                return true;

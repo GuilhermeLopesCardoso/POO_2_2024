@@ -1,4 +1,4 @@
-package exercicio_bancario;
+package atividadebanco;
 
 import java.util.ArrayList;
 
@@ -7,6 +7,8 @@ public class Banco {
 	private ArrayList<ContaBancariaCorrente> contasCorrentes ;
 	private ArrayList<ContaBancariaEspecial> contasEspeciais ;
 	private ArrayList<ContaBancariaPoupanca> contasPoupanca;
+	
+	
 	
 	
 	public String listaContasBancaria() {
@@ -49,6 +51,10 @@ public class Banco {
 		
 		
 	}
+	
+	
+	
+	
 	
 	public Banco(ArrayList<ContaBancaria> contas, ArrayList<ContaBancariaCorrente> contasCorrentes,
 			ArrayList<ContaBancariaEspecial> contasEspeciais, ArrayList<ContaBancariaPoupanca> contasPoupanca) {

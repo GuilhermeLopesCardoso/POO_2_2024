@@ -1,11 +1,11 @@
-package exercicio_bancario.exercicio_bancario_teste;
+package atividadebanco.exercicio_bancario_teste;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import exercicio_bancario.ContaBancariaPoupanca;
+import atividadebanco.ContaBancariaPoupanca;
 
 class ContaBancariaPoupancaTest {
 

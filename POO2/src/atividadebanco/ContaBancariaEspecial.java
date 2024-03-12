@@ -1,6 +1,7 @@
-package exercicio_bancario;
+package atividadebanco;
 
-public class ContaBancariaEspecial {
+public class ContaBancariaEspecial extends ContaBancaria {
+
     private double limite;
 
 
@@ -26,7 +27,7 @@ public class ContaBancariaEspecial {
         }return false;
     }
     @Override
-    public boolean Transferencia(ContaBancaria destino, double valor ) {
+    public boolean Tranferencia(ContaBancaria destino, double valor ) {
         if(Saque(valor)) {
             if(destino.Deposito(valor)) {
                 return true;

@@ -1,6 +1,7 @@
-package exercicio_bancario;
+package atividadebanco;
 
-public class ContaBancariaPoupanca {
+public class ContaBancariaPoupanca extends ContaBancaria {
+
     private int dia = 5;
 
     public ContaBancariaPoupanca() {
@@ -10,6 +11,7 @@ public class ContaBancariaPoupanca {
     public ContaBancariaPoupanca(int numeroConta, double saldo) {
         super(numeroConta, saldo);
     }
+
 
     @Override
     public boolean Saque(double valor) {
@@ -26,7 +28,7 @@ public class ContaBancariaPoupanca {
         }
 
     @Override
-    public boolean Transferencia(ContaBancaria destino, double valor ) {
+    public boolean Tranferencia(ContaBancaria destino, double valor ) {
         if(Saque(valor)) {
             if(destino.Deposito(valor)) {
                 return true;
@@ -37,6 +39,10 @@ public class ContaBancariaPoupanca {
         }return false;
     }
 
+
+
+
+
     public int getDia() {
         return dia;
     }
@@ -44,5 +50,8 @@ public class ContaBancariaPoupanca {
     public void setDia(int dia) {
         this.dia = dia;
     }
+
+
+
 
 }
