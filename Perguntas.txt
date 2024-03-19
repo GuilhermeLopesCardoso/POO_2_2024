@@ -1,0 +1,20 @@
+A Terra é o maior planeta do sistema solar, Falsa.
+A Lua é um satélite natural da Terra, Verdadeira.
+O Monte Everest é a montanha mais alta do mundo, Verdadeira.
+A água pura é um bom condutor de eletricidade, Falsa.
+O italiano é uma língua oficial da ONU (Organização das Nações Unidas), Verdadeira.
+O oxigênio é o elemento químico mais abundante na crosta terrestre, Falsa.
+A tartaruga é um réptil, Verdadeira.
+A sétima letra do alfabeto inglês é "G", Falsa.
+O pinguim é uma ave que voa, Falsa.
+O filme "Forrest Gump" foi lançado na década de 1980, Falsa.
+A Grande Barreira de Corais está localizada na costa do Havaí, Falsa.
+A velocidade do som é maior no ar do que na água, Falsa.
+O Brasil faz fronteira com o Equador, Falsa.
+O aço é uma liga metálica composta principalmente de ferro e carbono, Verdadeira.
+O Sol é uma estrela anã, Falsa.
+O Planeta Vênus é o mais próximo da Terra, Verdadeira.
+A França é o país mais populoso da Europa, Falsa.
+O Google foi fundado em 1998, Verdadeira.
+O zero é um número par, Verdadeira.
+O ferro é um elemento químico com o símbolo "Fe", Verdadeira.
