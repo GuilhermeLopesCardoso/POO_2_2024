@@ -11,6 +11,9 @@ import atividadebanco.ContaBancariaPoupanca;
 
 public class ArquivoContas {
     
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<ContaBancaria> contas = new ArrayList<ContaBancaria>();
         try {
@@ -23,15 +26,15 @@ public class ArquivoContas {
                 int nr = Integer.parseInt(v[1]);
                 double saldo = Double.parseDouble(v[2]);
                 if(v[0].equals ("0")) {
-                   contas.add = new ContaBancariaCorrente(55,100);
+                   contas.add(new ContaBancariaCorrente(55,100));
                 }
 
                 if(v[0].equals ("1")) {
-                    contas.add = new ContaBancariaPoupanca(70,100);
+                    contas.add(new ContaBancariaPoupanca(70,100));
                  }
 
                  if(v[0].equals ("2")) {
-                    contas.add = new ContaBancariaEspecial(88,100,500);
+                    contas.add(new ContaBancariaEspecial(88,100,500));
                  }
             }
 

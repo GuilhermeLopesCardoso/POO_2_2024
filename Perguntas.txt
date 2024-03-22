@@ -17,4 +17,4 @@ O Planeta Vênus é o mais próximo da Terra, Verdadeira.
 A França é o país mais populoso da Europa, Falsa.
 O Google foi fundado em 1998, Verdadeira.
 O zero é um número par, Verdadeira.
-O ferro é um elemento químico com o símbolo "Fe", Verdadeira.
+O ferro é um elemento químico com o símbolo "Fé", Verdadeira.

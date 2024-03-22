@@ -37,7 +37,7 @@ public class LeituraEscrita {
         }
     }
 
-    private static void leitura() {
+    public static void leitura() {
         try {
             FileReader fr = new FileReader("Sorteio.txt");
             BufferedReader br = new BufferedReader(fr);

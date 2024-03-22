@@ -2,37 +2,51 @@ package exercicio_arquivos;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 
 public class Jogo {
     public static void main(String[] args) {
-        String menu = "1 - Rodada de Perguntas\n"
-                    + "2 - Score Total\n\n"
-                    + "3 - Sair";
-        int op = 0;
-        do {
-            op = Integer.parseInt(JOptionPane.showInputDialog(menu));
-            if(op==1) lerPerguntas();
-        } while (op!=3);
-    }
+       
+        ArrayList<Pergunta> perguntas = new ArrayList<Pergunta>();
 
-    private static void lerPerguntas() {
+
         try {
             FileReader fr = new FileReader("Perguntas.txt");
             BufferedReader br = new BufferedReader(fr);
-            String texto = br.readLine();
-            String[] quebra = texto.split("|");
             String linha = "";
-            while((linha = br.readLine())!= null) {
-                System.out.println(linha);
-            }
-            while(texto!=null) {
-            texto = br.readLine();
-            System.out.println(quebra);
+            while ((linha = br.readLine())!=null) {
+                String v [] = linha.split(",");
+                String pergunta = v[0];
+                String resposta = v[1];
+                perguntas.add(new Pergunta(pergunta, resposta));
             }
             br.close();
-        } catch (Exception e) {
+        } catch(Exception e) {
             e.printStackTrace();
+        }
+
+
+
+        String menu = "1 - Rodada de Perguntas\n"
+                    + "2 - Score Total\n\n"
+                    + "3 - Sair";
+
+        int op = 0;
+
+        do {
+            op = Integer.parseInt(JOptionPane.showInputDialog(menu));
+            if(op==1) {
+                perguntas(perguntas);
+            }
+        } while(op!=3);
+
+    }
+
+    public static void perguntas(ArrayList<Pergunta> perguntas) {
+        for(Pergunta p : perguntas) {
+            System.out.println(p.getPergunta());
         }
     }
 }
