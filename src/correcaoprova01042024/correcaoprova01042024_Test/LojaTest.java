@@ -1,4 +1,4 @@
-package correcaoprova01042024.correcaoprova01042024_tests;
+package correcaoprova01042024.correcaoprova01042024_Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import correcaoprova01042024.Loja;
 
-class Lojatest {
+class LojaTest {
 	
 	private Loja loja = new Loja();
 
