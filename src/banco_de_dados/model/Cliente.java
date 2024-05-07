@@ -8,10 +8,11 @@ public class Cliente {
 	private String sexo;
 	private Cidade cidade;
 	
-	
 	public Cliente() {
 		
 	}
+	
+	
 	
 	public Cliente(int id, String nome, int idade, String sexo, Cidade cidade) {
 		this.id = id;
@@ -20,7 +21,9 @@ public class Cliente {
 		this.sexo = sexo;
 		this.cidade = cidade;
 	}
-	
+
+
+
 	public int getId() {
 		return id;
 	}
@@ -51,9 +54,13 @@ public class Cliente {
 	public void setCidade(Cidade cidade) {
 		this.cidade = cidade;
 	}
-	
+
 	@Override
 	public String toString() {
-		return getId() + " - " + getNome() + " - " + getIdade() + " - " + getSexo() + " - " + getCidade();	}
+		return getId() + "-" + getNome() + "-" + getIdade()
+				+ "-" + getSexo() + "-" + getCidade();
+	}
+	
+	
 
 }

@@ -6,17 +6,14 @@ public class Cidade {
 	private String nome;
 	private String uf;
 	
-	
 	public Cidade() {
 		
 	}
-	
 	public Cidade(int id, String nome, String uf) {
 		this.id = id;
 		this.nome = nome;
 		this.uf = uf;
 	}
-	
 	public int getId() {
 		return id;
 	}
@@ -38,7 +35,7 @@ public class Cidade {
 	
 	@Override
 	public String toString() {
-		return getId() + " - " + getNome() +  " - " + getUf();
+		return getId()+"-"+getNome()+"-"+getUf();
 	}
-	
+
 }
